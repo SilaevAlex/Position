@@ -1,6 +1,11 @@
+html,
 body {
     font-family: Roboto, sans-serif;
     list-style: none;
+    background-color: white;
+}
+
+body {
     height: 1500px;
 }
 
@@ -18,18 +23,23 @@ header {
 }
 
 .container {
-    width: 991px;
+    width: 1440px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
-.Logo {
+.container > nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+.logo {
     font-size: 36px;
     line-height: 1.17;
     font-weight: 400;
@@ -53,17 +63,20 @@ header {
     visibility: hidden;
     opacity: 0;
     transition: all .3s;
+    font-size: 24px;
+    line-height: 1.16;
+    padding: 10px 0;
+    right: 0;
 
 }
 
 .dropdawn_list li {
     padding: 27px 10px;
-    font-size: 24px;
-    line-height: 1.16;
-    font-weight: 400;
-    transition: all .2s;
+    display: block;
+    transition: all .3s;
 }
 
 .dropdawn_list li:hover {
-    background-color: gold;
+    background-color: #7B89BA;
+    color: white;
 }
